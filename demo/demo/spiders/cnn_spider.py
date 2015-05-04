@@ -36,8 +36,8 @@ class CnnSpider(CrawlSpider):
             selkeywords = sel.xpath('./meta[contains(@name,"keywords")]/@content').extract()
             item['desc'] = sel.xpath('./meta[contains(@property,"description")]/@content').extract()
             item['link'] = sel.xpath('./meta[contains(@property,"url")]/@content').extract()
-            item['image_urls'] = sel.xpath('./meta[contains(@property,"image")]/@content').extract()
-            if item['title']==[] or selkeywords==[] or item['desc'] == [] or item['link'] == [] or item['image_urls'] == []:
+#            item['image_urls'] = sel.xpath('./meta[contains(@property,"image")]/@content').extract()
+            if item['title']==[] or selkeywords==[] or item['desc'] == [] or item['link'] == [] :#or item['image_urls'] == []:
                 continue
         
             exist = False

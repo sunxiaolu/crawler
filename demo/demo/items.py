@@ -20,6 +20,6 @@ class DemoItem(scrapy.Item):
     id = scrapy.Field()
     author=scrapy.Field()
     keywords = scrapy.Field()
-    image_urls = scrapy.Field()
-    images = scrapy.Field()
+#    image_urls = scrapy.Field()
+#    images = scrapy.Field()
     pass

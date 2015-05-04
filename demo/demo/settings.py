@@ -29,20 +29,20 @@ NEWSPIDER_MODULE = 'demo.spiders'
 #}
 
 ITEM_PIPELINES = {
-    'demo.pipelines.ImageDPipeline': 303,
-#    'demo.pipelines.JsonWithEncodingPipeline': 300,
+#    'demo.pipelines.ImageDPipeline': 303,
+    'demo.pipelines.JsonWithEncodingPipeline': 300,
 #    'demo.pipelines.RedisPipeline': 301,
 }
 
-IMAGES_STORE = '/Users/Sunxiaolu/Google\ Drive/recommend/crawler/demo'
-
-IMAGES_THUMBS = {
-    'small': (50, 50),
-    'big': (270, 270),
-}
-
-IMAGES_MIN_HEIGHT = 110
-IMAGES_MIN_WIDTH = 110
+#IMAGES_STORE = '/Users/Sunxiaolu/Google\ Drive/recommend/crawler/demo'
+#
+#IMAGES_THUMBS = {
+#    'small': (50, 50),
+#    'big': (270, 270),
+#}
+#
+#IMAGES_MIN_HEIGHT = 110
+#IMAGES_MIN_WIDTH = 110
 
 LOG_LEVEL = 'INFO'
 
